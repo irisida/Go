@@ -9,3 +9,11 @@ the common way to work with files in Go is wth the `os` package. It provides a p
 Basic file operations using the `os` package and the `log` package for idiomatic error logging
 
 ![](/assets/core/09/09-901-file-basics.png)
+
+The `reader` and `writer` interfaces are abstraction used to read and write bytes to files without being bogged down by how we read or where we write the data. Let's see this with the `os` package and the truncation and `write` modes.
+
+![](/assets/core/09/09-902-write.png)
+
+Here we can see an `ioutil` package version of the simple write operation. This poses the question that if the os packages does this already why are we duplicating it? The answer is eah import has a cost and increases the statically linked binary size in the end.
+
+![](/assets/core/09/09-903-write.png)
