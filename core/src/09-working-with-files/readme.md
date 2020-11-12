@@ -20,4 +20,4 @@ Here we can see an `ioutil` package version of the simple write operation. This 
 
 We can also use the `bufio` package to achieve a buffered and optimised writing strategy using a 4096 default buffer.
 
-![](/assets/core/09/09-903-bufio.png)
+![](/assets/core/09/09-904-bufio.png)
