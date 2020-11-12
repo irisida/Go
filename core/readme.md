@@ -11,3 +11,4 @@
 - [07 Bytes, runes, strings & UTF-8](/core/src/07-bytes-runes-strings-utf8)
 - [08 maps](/core/src/08-maps)
 - [09 working with files](/core/src/09-working-with-files)
+- [10 structs](/core/src/10-structs)
