@@ -17,3 +17,7 @@ The `reader` and `writer` interfaces are abstraction used to read and write byte
 Here we can see an `ioutil` package version of the simple write operation. This poses the question that if the os packages does this already why are we duplicating it? The answer is eah import has a cost and increases the statically linked binary size in the end.
 
 ![](/assets/core/09/09-903-write.png)
+
+We can also use the `bufio` package to achieve a buffered and optimised writing strategy using a 4096 default buffer.
+
+![](/assets/core/09/09-903-bufio.png)
