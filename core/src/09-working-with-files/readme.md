@@ -24,4 +24,10 @@ We can also use the `bufio` package to achieve a buffered and optimised writing 
 
 ## Reading files operations
 
+We can use both the `io` and `ioutil` packages for reading, see the common approach below.
+
 ![](/assets/core/09/09-905-buffered-reader.png)
+
+We can use `bufio` to have a buffered reader and read a file line by line, of by split/configured separator. Note here we're showing that you can read by Bytes() and Text() too.
+
+![](/assets/core/09/09-906-line-reader.png)
