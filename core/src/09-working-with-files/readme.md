@@ -31,3 +31,7 @@ We can use both the `io` and `ioutil` packages for reading, see the common appro
 We can use `bufio` to have a buffered reader and read a file line by line, of by split/configured separator. Note here we're showing that you can read by Bytes() and Text() too.
 
 ![](/assets/core/09/09-906-line-reader.png)
+
+Next we're seeing how to read from the stdin until a quit condition is met.
+
+![](/assets/core/09/09-907-stdin.png)
