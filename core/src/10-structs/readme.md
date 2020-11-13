@@ -7,3 +7,7 @@ A struct is a sequence of named elements, or fields! Each element/field must hav
 In Go a struct is nothing more than a blueprint of the data a structure can hold. It is fixed at compile time, the structure of it is not mutable at runtime.
 
 ![](/assets/core/10/1001-basic-struct.png)
+
+![](/assets/core/10/1002-update-struct.png)
+
+![](/assets/core/10/1003-anon-struct.png)
