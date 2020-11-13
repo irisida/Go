@@ -47,3 +47,7 @@
 - fileservers
 - static file servers
 - notFoundHandler and favicons
+
+## Section 7 - State
+
+[Here](/web/src/goWebMcLeod/S7-state) I'm covering
