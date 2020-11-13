@@ -42,3 +42,8 @@
 [Here](/web/src/goWebMcLeod/S6-serving-files) I'm covering
 
 - serving files with io.copy
+- serving local files with io.copy
+- serveContent and serveFile
+- fileservers
+- static file servers
+- notFoundHandler and favicons
