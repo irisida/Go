@@ -12,3 +12,4 @@
 - [08 maps](/core/src/08-maps)
 - [09 working with files](/core/src/09-working-with-files)
 - [10 structs](/core/src/10-structs)
+- [11 functions](/core/src/11-functions)
