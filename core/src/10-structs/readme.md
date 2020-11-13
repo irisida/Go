@@ -11,3 +11,5 @@ In Go a struct is nothing more than a blueprint of the data a structure can hold
 ![](/assets/core/10/1002-update-structs.png)
 
 ![](/assets/core/10/1003-anon-struct.png)
+
+![](/assets/core/10/1004-nested-structs.png)
