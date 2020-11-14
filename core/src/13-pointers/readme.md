@@ -13,3 +13,7 @@ So we're going to think of that as memory locations as `street addresses` and th
 **What's any of this got to do with pointers?** well, a pointer is a variable where the value is an address of another piece of memory, or an address you visit to find out another address elsewhere.
 
 ![](/core/src/13-pointers/assets/1301-pointers.png)
+
+There are multiple ways you can declare a pointer including uninitialised techniques which result in a `nil` pointer, the `new()` method which again will be uninitalised and nil. Let's see some of these in action. We can also see the use of the `&` address-of and the `*` dereferencing operator in action.
+
+![](/core/src/13-pointers/assets/1302-declare-pointers.png)

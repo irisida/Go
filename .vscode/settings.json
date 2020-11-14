@@ -4,6 +4,7 @@
         "funcs",
         "gologo",
         "nums",
+        "uninitalised",
         "usecases"
     ]
 }
