@@ -14,4 +14,10 @@ func (r receiver) functionName(parameters) (return types) {
 
 ## Some basic functions and function signatures
 
+Let's see some basic function signatures, from the trivial no paramaters preocedure type call, to parameterised functions returning a value, or multiple values.
+
 ![](/assets/core/11/1101-funcs.png)
+
+Next we can have named returns, notice the named return in the function signature and that allows us simplify the actual returning of values in the function down to a simple `return` statement. Not only is this is this elegant, it's syntactically beautiful in my opinion.
+
+![](/assets/core/11/1102-named-returns.png)
