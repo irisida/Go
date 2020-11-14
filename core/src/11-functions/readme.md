@@ -38,4 +38,8 @@ Where we are operating on a variadic to produce returns we can use standard slic
 
 ![](/assets/core/11/1105-variadic-with-return.png)
 
-## The defer statement
+## Anonymous functions
+
+It's possible in Go to create an anonymous function. Because it is anoymous, meaning it has no name it mist be immediately invoked or it cannot be called at all. This is similar to the IIFE construct in javascript.
+
+![](/assets/core/11/1106-anon.png)
