@@ -6,25 +6,25 @@ A slice is a Go specific feature and works pretty much like a dynamic array in o
 
 Where it has commonality with an array is that both constructs demand all elements are of the same type. Both construct can use the `keyed` mechanism which allows us to specify a key as its index position.
 
-![](/assets/core/06/06-601-slice-basics.png)
+![](/core/src/06-slices/assets/601-slice-basics.png)
 
 ## Comparing slices in Go
 
 Slices can be compared to nil in a simple comparison operation, `data != nil`, or `data == nil`. Comparing slices with value sets is not so trivial or syntactically easy. any direct comparison operation will generate a compile time error. Instead we must compare element by element and be mindful of lengths between structures.
 
-![](/assets/core/06/06-602-compare-slices.png)
+![](/core/src/06-slices/assets/602-compare-slices.png)
 
 ## Copying with slices
 
 Copying slices can be done as an iteration of with the copy function, but the copy function does not demand the length of the source and destination be equal, in fact it's entirely possible to successfully transfer nothing to a zero length destination. So the copy operator requires a little care to be sure the results are intended.
 
-![](/assets/core/06/06-603-copy-slices.png)
+![](/core/src/06-slices/assets/603-copy-slices.png)
 
 ## Slice of a slice
 
 We can create a new slice from an existing slice, or we can have a slice of a slice as a slice. I was actually going to try to work tge word slice in another couple of times there to be a smart-arse but you get the point.
 
-![](/assets/core/06/06-604-slice-of-slice.png)
+![](/core/src/06-slices/assets/604-slice-of-slice.png)
 
 So now we've seen a slice what is it? Well a slice has some under the hood magic going on. Underneath, Go creates what is called a `backing array` and it's the backing array that stores the elements, not the slice. Go implements a slice as a data structure called a `slice header`. A slice header has three fields:
 
@@ -40,7 +40,7 @@ So now we've seen a slice what is it? Well a slice has some under the hood magic
 
 The underlying array and how `cap()` and `len()` interact with it show some inefficiencies in Go, or optimisations depending on how you look at it.
 
-![](/assets/core/06/06-605-burst-cap.png)
+![](/core/src/06-slices/assets/605-burst-cap.png)
 
 The output of this is as follows:
 
