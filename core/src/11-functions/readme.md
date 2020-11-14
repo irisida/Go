@@ -37,3 +37,5 @@ Where variadic functions mutate a slice we can see that the values are passed by
 Where we are operating on a variadic to produce returns we can use standard slicing iteration and named returns to mix the techniques we have seen already to achieve an operational function code that handles the scenario and maintains an elegant readability.
 
 ![](/assets/core/11/1105-variadic-with-return.png)
+
+## The defer statement
