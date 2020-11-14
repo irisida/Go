@@ -6,7 +6,7 @@
 
 In Go strings by default are utf-8 encoded, what can we say except that one of the creators of Go was also responsible for utf-8. Strings are enclosed din double quotes.
 
-![](/assets/core/07/07-701-strings.png)
+![](/core/src/07-bytes-runes-strings-utf8/assets/701-strings.png)
 
 strings are synonymous with char types in many programming languages. Go does not have a cha type, instead Go uses Bytes and Runes to represent characters. Characters are often called `rune literals` and are expressed in Go by enclosing them in single quotes. Rune literals are represented using Unicode Code Points. A code point is a numeric value that represents a rune literal.
 
@@ -19,14 +19,14 @@ strings are synonymous with char types in many programming languages. Go does no
 
 Note that we have runes that take more than a single byte.
 
-![](/assets/core/07/07-702-runes.png)
+![](/core/src/07-bytes-runes-strings-utf8/assets/702-runes.png)
 
 If you want to take a slice of runes you need a two step process to convert from slice of bytes to slice of runes.
 
-![](/assets/core/07/07-703-rune-slice.png)
+![](/core/src/07-bytes-runes-strings-utf8/assets/703-rune-slice.png)
 
 ## strings package
 
 covering some typical methods of the strings package for splitting, replacing and general tinkering with strings.
 
-![](/assets/core/07/07-704-pkg.png)
+![](/core/src/07-bytes-runes-strings-utf8/assets/704-pkg.png)
