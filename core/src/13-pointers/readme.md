@@ -11,3 +11,5 @@ Pointers are a traditionally a "biggie"! People get stuck in languages like C, C
 So we're going to think of that as memory locations as `street addresses` and the CPU is a `Taxi/Uber driver`. Each house holds a person(value) that is stored(sleeps) at that location(address). Follow? In our programs a variable is just a name/nickname for a location, or street address.
 
 **What's any of this got to do with pointers?** well, a pointer is a variable where the value is an address of another piece of memory, or an address you visit to find out another address elsewhere.
+
+![](/core/src/13-pointers/assets/1301-pointers.png)
