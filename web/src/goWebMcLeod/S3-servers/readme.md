@@ -8,8 +8,8 @@
 ## Key takeaways
 
 We can see a basic read/write tcp server here
-![](/assets/web/goWebMcLeod/S3/tcpreadwrite.png)
+![](/web/src/goWebMcLeod/S3-servers/assets/tcpreadwrite.png)
 
 Here is the same fle with additional comments to highlight both the actions and the flaws in the approach taken here with the infinite loop.
 
-![](/assets/web/goWebMcLeod/S3/tcpreadwritecomment.png)
+![](/web/src/goWebMcLeod/S3-servers/assets/tcpreadwritecomment.png)
