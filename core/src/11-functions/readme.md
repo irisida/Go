@@ -29,3 +29,7 @@ Variadic functions take a variable number of parameters by using the ellipsis pa
 3. readability - it is infinitely easier to read code with one parameter than with 3, 5, 10 and so on...
 
 ![](/assets/core/11/1103-variadic.png)
+
+Where variadic functions mutate a slice we can see that the values are passed by reference and not by value as the original structure outside of the variadic function will reflect the mutation thereafter.
+
+![](/assets/core/11/1104-more-variadic.png)
