@@ -2,10 +2,18 @@ package main
 
 import "fmt"
 
-func main() {
-	func(msg string) { // creates an anonymous function that must be immediately invoked
-		fmt.Println(msg)
-	}("I am anonymous")
+func inc(x int) func() int {
+	return func() int {
+		x++
+		return x
+	}
+}
 
-	// similar to the IIFE in javascript
+func main() {
+	a := inc(10)
+
+	for i := 0; i < 10; i++ {
+		fmt.Printf("in inc loop index: %d increment value: %d \n", i, a())
+	}
+
 }
