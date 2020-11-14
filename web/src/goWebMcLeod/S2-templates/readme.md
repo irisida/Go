@@ -34,20 +34,20 @@ Template parsing with....
 
 5. FuncMaps form part of the template construction as static compilation is required to work correctly.
 
-![](/assets/web/goWebMcLeod/S2/02-01-tpl.png)
+![](/web/goWebMcLeod/S2-templates/assets/201-tpl.png)
 
-![](/assets/web/goWebMcLeod/S2/02-02-more-tpl.png)
+![](/web/goWebMcLeod/S2-templates/assets/202-more-tpl.png)
 
-![](/assets/web/goWebMcLeod/S2/02-03-multiple-templates.png)
+![](/web/goWebMcLeod/S2-templates/assets/203-multiple-templates.png)
 
-![](/assets/web/goWebMcLeod/S2/02-04-globs.png)
+![](/web/goWebMcLeod/S2-templates/assets/204-globs.png)
 
-![](/assets/web/goWebMcLeod/S2/02-05-with-data.png)
+![](/web/goWebMcLeod/S2-templates/assets/205-with-data.png)
 
-![](/assets/web/goWebMcLeod/S2/02-09-maps.png)
+![](/web/goWebMcLeod/S2-templates/assets/209-maps.png)
 
-![](/assets/web/goWebMcLeod/S2/02-14-pipelines.png)
+![](/web/goWebMcLeod/S2-templates/assets/214-pipelines.png)
 
-![](/assets/web/goWebMcLeod/S2/02-15-functions.png)
+![](/web/goWebMcLeod/S2-templates/assets/215-functions.png)
 
-![](/assets/web/goWebMcLeod/S2/02-17-methods.png)
+![](/web/goWebMcLeod/S2-templates/assets/217-methods.png)
