@@ -17,7 +17,6 @@ A type should have one responsibility and therefore only one reason to change. I
 - A struct should have a single purpose or functionality.
 - All functionality of the struct should be strictly, narrowly aligned to that functionality/purpose.
 - cross cutting functionality extensions should be avoided or extracted out to another struct. (separation of concerns)
--
 
 ## OCP - Open closed principle
 
