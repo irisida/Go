@@ -10,7 +10,7 @@ An `if` statement allows you to to execute a specific block of code only if the 
 
 Let's see an `if`, `else if`, `else` block.
 
-![](/assets/core/04/04-401-basic-if.png)
+![](/core/src/04-flow-control/assets/401-basic-if.png)
 
 ## Loops
 
@@ -18,40 +18,40 @@ Computers are great at repeating tasks and an important aspect of program contro
 
 Let's see a really trivial `for loop` example. While the program does nothing useful it covers all the key elements pf a for loop.
 
-![](/assets/core/04/04-402-basic-for.png)
+![](/core/src/04-flow-control/assets/402-basic-for.png)
 
 ## The while loop in go
 
 There is NO `while` loop or keyword in Go as is found in many/most other languages. We can however achieve the same result with a `for loop` that is rephrased. See example below for how we handle entry conditions, stop conditions and controller mechanisms.
 
-![](/assets/core/04/04-403-while-in-go.png)
+![](/core/src/04-flow-control/assets/403-while-in-go.png)
 
 ## Break and Continue
 
 in our loops we have additional controlling features such as `break` and `continue`. As the name suggests `break` allows us to break out of a loop completely. On the other hand `continue` allows us to conditionally check in the iteration of a loop for a condition where we might want to avoid the typical action can be bypassed and the loop proceeds to the next iteration.
 
-![](/assets/core/04/04-404-break-continue.png)
+![](/core/src/04-flow-control/assets/404-break-continue.png)
 
 ## label statements
 
 Labels are used in `break`, `continue` and `goto` statements. Defined labels must be used or there will be a compilation time error. Labels will also not collide with identifiers that are not a label. The scope of a label is the body of the function it was declared in, this excludes any nested function. The primary use of a label is when terminating enclosing outer loops.
 
-![](/assets/core/04/04-405-labels.png)
+![](/core/src/04-flow-control/assets/405-labels.png)
 
 ## The goto statement
 
 A goto statement can operate much like a for loop and the goto is very much a relic of traditional programming languages that is often left out of new languages. The caveat is that in the goto/label block no new variables that were not already in play can be introduced. See below for a simple example operating like a `for` loop.
 
-![](/assets/core/04/04-406-goto.png)
+![](/core/src/04-flow-control/assets/406-goto.png)
 
 ## The switch statement
 
 The switch statement is an elegant syntax for handling cases instead of an `if, else if, else` block and adds clarity where there are many cases which would make the if-else construct a bit noisy or messy.
 
-![](/assets/core/04/04-407-switch.png)
+![](/core/src/04-flow-control/assets/407-switch.png)
 
 ## Scope - block, file & package
 
 It's also worth noting the differences in scope in a Go program, we can have block, file and package scopes.
 
-![](/assets/core/04/04-scope.png)
+![](/core/src/04-flow-control/assets/04-scope.png)
