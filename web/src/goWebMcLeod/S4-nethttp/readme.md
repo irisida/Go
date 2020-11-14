@@ -17,6 +17,6 @@ When we explore the `http.Request` aspect of the http package, we can see the av
 
 ![](/web/src/goWebMcLeod/S4-netHttp/assets/403-request.png)
 
-We can also see the response writer in action using trivial response object. Note we can add custom headers as the headers take a key-va;ue pairing.
+We can also see the response writer in action using trivial response object. Note we can add custom headers as the headers take a key-value pairing.
 
 ![](/web/src/goWebMcLeod/S4-netHttp/assets/404-response-writer.png)
