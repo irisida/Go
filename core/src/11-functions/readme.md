@@ -33,3 +33,7 @@ Variadic functions take a variable number of parameters by using the ellipsis pa
 Where variadic functions mutate a slice we can see that the values are passed by reference and not by value as the original structure outside of the variadic function will reflect the mutation thereafter.
 
 ![](/assets/core/11/1104-more-variadic.png)
+
+Where we are operating on a variadic to produce returns we can use standard slicing iteration and named returns to mix the techniques we have seen already to achieve an operational function code that handles the scenario and maintains an elegant readability.
+
+![](/assets/core/11/1105-variadic-with-return.png)
