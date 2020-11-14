@@ -13,3 +13,5 @@
 - [09 working with files](/core/src/09-working-with-files)
 - [10 structs](/core/src/10-structs)
 - [11 functions](/core/src/11-functions)
+- [12 defer](/core/src/12-defer)
+- [13 pointers](/core/src/13-pointers)
