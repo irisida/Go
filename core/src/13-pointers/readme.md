@@ -26,3 +26,7 @@ WAIT! we've seen `var ptr1 *float64` and later `*p` as having different meanings
 **These are important.** So let's see that compounded with another example.
 
 ![](/core/src/13-pointers/assets/1303-pointers.png)
+
+We may also have a pointer that points to a pointer, effectively it is two steps removed and its value will be the memory address of the pointer to the source. To dereference we can use the `**` operator, so we are dereferencing the dereference. See below for the creation and mutation of source values using a pointer to a pointer.
+
+![](/core/src/13-pointers/assets/1304-p2p.png)

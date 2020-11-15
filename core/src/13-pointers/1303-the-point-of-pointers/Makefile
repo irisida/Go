@@ -2,4 +2,4 @@ run:
 	go run main.go
 
 build:
-	go build -o goPointerBasics main.go
+	go build -o goPointerExample main.go
