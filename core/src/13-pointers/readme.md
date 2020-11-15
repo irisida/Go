@@ -37,6 +37,14 @@ An important note for comparing pointers is that they can be compared with a boo
 
 ## Using pointers with functions
 
-Next we need to see how we handle pointers with functions. Go is a pass by value language and that means local copies are made and function scope for values is the typical. We can bypass that with pointers to be able to pass by reference. Let's see a direct example that shows both how values are localised by default and how a pointer can be passed to a function that performs a mutation and the changes are reflected after the function has completed and returned.
+Next we need to see how we handle pointers with functions. Go is a pass by value language and that means local copies are made and function scope for values is the typical. We can bypass that with pointers to be able to **appear to** pass by reference. This is not strictly the case as there is no _pass by reference_ in Go but Let's see a direct example that shows both how values are localised by default and how a pointer can be passed to a function that performs a mutation and the changes are reflected after the function has completed and returned.
 
 ![](/core/src/13-pointers/assets/1305-pointer-funcs.png)
+
+## Pass by value Vs pass by pointer
+
+As we have noted above, in a lot of programming languages when a value is passed by a pointer it is documented as pass by reference. There is no _pass by reference_ in Go and each time you pass an argument to a function, even a pointer, it will be copied to a different memory location. To understand it better let's have a look at an example of each data type when passed to a function that tries to modify the arguments inside its body.
+
+![](/core/src/13-pointers/assets/1306-pointer-vs-values.png)
+
+![](/core/src/13-pointers/assets/1307-pointer-vs-values-struct.png)
