@@ -47,4 +47,4 @@ As we have noted above, in a lot of programming languages when a value is passed
 
 ![](/core/src/13-pointers/assets/1306-pointer-vs-values.png)
 
-![](/core/src/13-pointers/assets/1307-pointers-vs-values-struct.png)
+![](/core/src/13-pointers/assets/1307-pointers-vs-value-struct.png)
