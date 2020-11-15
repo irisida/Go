@@ -1,6 +1,6 @@
 ![](/assets/gologo.png)
 
-# The Go programming Language - Methods & Interfaces
+# The Go programming Language - Methods & Receivers
 
 ## Receiver functions
 
@@ -14,6 +14,6 @@ With programmer defined type we add to the function signature an additional para
 
 ## Receiver functions with pointers
 
-To be able to make changes to an an example of a type or struct we would use pointers as the receiver type. If we dont we have the same pass by value, local copy and changes lost issue we seen in the pointers examples earlier.
+To be able to make changes to an an example of a type or struct we would use pointers as the receiver type. If we don't we have the same pass by value, local copy and changes lost issue we seen in the pointers examples earlier.
 
 ![](/core/src/14-methods-and-interfaces/assets/1403-pointer-receivers.png)

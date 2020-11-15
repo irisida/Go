@@ -15,4 +15,5 @@
 - [11 Working with functions](/core/src/11-functions)
 - [12 How to defer](/core/src/12-defer)
 - [13 Working with pointers](/core/src/13-pointers)
-- [14 Methods and Interfaces](/core/src/14-methods-and-interfaces)
+- [14 Methods and Receivers](/core/src/14-methods-and-receivers)
+- [15 Interfaces](/core/src/15-interfaces)

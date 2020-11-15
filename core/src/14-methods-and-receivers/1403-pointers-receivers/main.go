@@ -33,4 +33,9 @@ func main() {
 
 	pf("type: %T, name: %s instrument: %s\n", beatle, beatle.name, beatle.instrument)
 
+	ptr := &beatle
+
+	ptr.setPlayer("Ringo", "drums")
+
+	pf("type: %T, name: %s instrument: %s\n", beatle, beatle.name, beatle.instrument)
 }
