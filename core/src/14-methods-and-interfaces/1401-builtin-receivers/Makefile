@@ -2,4 +2,4 @@ run:
 	go run main.go
 
 build:
-	go build -o goReceiverFunctions main.go
+	go build -o goBuiltInReceivers main.go
