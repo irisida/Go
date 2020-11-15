@@ -27,6 +27,16 @@ WAIT! we've seen `var ptr1 *float64` and later `*p` as having different meanings
 
 ![](/core/src/13-pointers/assets/1303-pointers.png)
 
+## A pointer to a pointer
+
 We may also have a pointer that points to a pointer, effectively it is two steps removed and its value will be the memory address of the pointer to the source. To dereference we can use the `**` operator, so we are dereferencing the dereference. See below for the creation and mutation of source values using a pointer to a pointer.
 
 ![](/core/src/13-pointers/assets/1304-p2p.png)
+
+An important note for comparing pointers is that they can be compared with a boolean comparison and will only return true if they are pointed to the same memory location, and therefore the same value. Two identical values at different memory location will return false in a comparison.
+
+## Using pointers with functions
+
+Next we need to see how we handle pointers with functions. Go is a pass by value language and that means local copies are made and function scope for values is the typical. We can bypass that with pointers to be able to pass by reference. Let's see a direct example that shows both how values are localised by default and how a pointer can be passed to a function that performs a mutation and the changes are reflected after the function has completed and returned.
+
+![](/core/src/13-pointers/assets/1305-pointer-funcs.png)
