@@ -48,3 +48,10 @@ As we have noted above, in a lot of programming languages when a value is passed
 ![](/core/src/13-pointers/assets/1306-pointer-vs-values.png)
 
 ![](/core/src/13-pointers/assets/1307-pointers-vs-value-struct.png)
+
+What we can see here is that even though Go passes everything by values and makes a local copy, with pointers they are copies pointing to the original and therefore the changes persist on the original
+
+When mutating a slice in a function, we do not need to pass as a pointer because a slice already contains a pointer to its underlying array. The same holds true for a `map` too. Slices and maps are not meant to be used with pointers.
+
+- passing by value is cheaper in efficiency
+- passing by pointer puts pressure on the garbage collector
