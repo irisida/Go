@@ -6,12 +6,15 @@ import (
 )
 
 /*
-	on running the server: go to localhost:8080/
-	to see the query handled go to localhost:8080/q=myvalue
+	On running the server: go to localhost:8080/
+	To see the query handled go to localhost:8080/q=myvalue
+	Note we use the post method meaning the data is sent through
+	the body and not the url(get)
 */
 
 func home(w http.ResponseWriter, req *http.Request) {
 	val := req.FormValue("q")
+	w.Header().Set("Content-Type", "text/html; charset=utf-8")
 	io.WriteString(w, `
 	<form method="post">
 		<input type="text" name="q">
