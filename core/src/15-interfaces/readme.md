@@ -12,7 +12,7 @@ You may think of it as a classification system, in order for a named type to be 
 
 ## polymorphic tendencies with interfaces 
 
-![](/core/src/15-interfaces/assets/1501-polymorphic.png)
+![](/core/src/15-interfaces/assets/1502-polymorphic.png)
 
 
 ## type assertions and type switches 
