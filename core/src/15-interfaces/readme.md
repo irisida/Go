@@ -16,3 +16,8 @@ You may think of it as a classification system, in order for a named type to be 
 
 
 ## type assertions and type switches 
+
+![](/core/src/15-interfaces/assets/1503-assertions.png)
+
+
+
