@@ -8,8 +8,11 @@ You may think of it as a classification system, in order for a named type to be 
 
 ## basic interface implementation 
 
+![](/core/src/15-interfaces/assets/1501-interfaces.png)
 
 ## polymorphic tendencies with interfaces 
+
+![](/core/src/15-interfaces/assets/1501-polymorphic.png)
 
 
 ## type assertions and type switches 
