@@ -6,8 +6,9 @@ import (
 )
 
 /*
-	on running the server: go to localhost:8080/
+	on running the server: go to localhost:8080/ to see
 	to see the query handled go to localhost:8080/q=myvalue
+	sample new line to test git integration with vim
 */
 
 func home(w http.ResponseWriter, req *http.Request) {
