@@ -6,18 +6,16 @@ Interfaces are a core concept of Go and can be a complicated topic. They are eve
 
 You may think of it as a classification system, in order for a named type to be of, or adhere to a specific interface it must implement the methods of that interface. It is therefore preferred in go to hae small/tight interfaces and object or named type can honour several than have massive ones that increase the cognitive complexity and reduce possible re-usage.
 
-## basic interface implementation 
+## basic interface implementation
 
 ![](/core/src/15-interfaces/assets/1501-interfaces.png)
 
-## polymorphic tendencies with interfaces 
+## polymorphic tendencies with interfaces
 
 ![](/core/src/15-interfaces/assets/1502-polymorphic.png)
 
-
-## type assertions and type switches 
+## type assertions and type switches
 
 ![](/core/src/15-interfaces/assets/1503-assertions.png)
 
-
-
+In Go we cannot have an interface implement another interface as a form of inheritance. Instead we can embed an interface in another, so a peer extension more than a parent-child relationship.
