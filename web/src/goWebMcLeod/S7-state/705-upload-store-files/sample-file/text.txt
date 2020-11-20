@@ -1,0 +1,4 @@
+go is the best
+go is good
+go has reasonable syntax
+go is not so bad
