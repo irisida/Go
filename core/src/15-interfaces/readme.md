@@ -20,4 +20,4 @@ You may think of it as a classification system, in order for a named type to be 
 
 In Go we cannot have an interface implement another interface as a form of inheritance. Instead we can embed an interface in another, so a peer extension more than a parent-child relationship. We can see an example of this below where we are embedding interfaces and the interface is only complete once we have actually implemented a method we're not using. \_this leads to a principle of only having what you truly need in an interface as implementing methods just for the sake of compliance is bad practice. A better practice is to have a variable implement multiple interfaces than ghost implementing pieces of larger interfaces.
 
-1[](/core/src/15-interfaces/assets/1504-embedded.png)
+![](/core/src/15-interfaces/assets/1504-embedded.png)
