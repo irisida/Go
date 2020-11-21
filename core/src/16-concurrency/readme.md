@@ -12,8 +12,9 @@ Firstly, let's be clear that `concurrency is not parallelism`. Concurrency means
 ## Go routines
 
 A Go routine is a lightweight thread of execution. The building blocks of Go's concurrency. So what is it? It's a function capable of running concurrently with other functions. To create a go routine we use the keyword `go` followed by the function invocation. In physical terms a go routine is smaller than a thread too.
+
 - goroutines take around 2kb of stack space to initialise compared to a thread which takes around 2mb.
 - OS thread stack is fixed size but goroutines shrink and grow as needed.
-- scheduling a goroutune is cheaper than scheduling a thread in resources.
-- OS threads are scheduled by the OS kernel, goroutimes are scheduled by the go scheduler.
+- scheduling a goroutine is cheaper than scheduling a thread in resources.
+- OS threads are scheduled by the OS kernel, goroutines are scheduled by the go scheduler.
 - goroutines have no identity.
