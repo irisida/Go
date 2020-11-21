@@ -18,3 +18,5 @@ A Go routine is a lightweight thread of execution. The building blocks of Go's c
 - scheduling a goroutine is cheaper than scheduling a thread in resources.
 - OS threads are scheduled by the OS kernel, goroutines are scheduled by the go scheduler.
 - goroutines have no identity.
+
+![](/core/src/16-concurrency/assets/1601-goroutine.png)
