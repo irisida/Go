@@ -33,4 +33,4 @@ OK so, real world sample might be a bit a stretch for a one paragraph demo howev
 
 Above we see the serial version of the program and below we have the same functionality rewritten for concurrent execution.
 
-![](/core/src/16-concurrency/assets/1604-url-checker-v2.png)
+![](/core/src/16-concurrency/assets/1603-url-checker-v2.png)
