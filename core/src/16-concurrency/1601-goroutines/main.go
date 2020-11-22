@@ -15,4 +15,5 @@ func main() {
 	fmt.Println("ARCH: ", runtime.GOARCH)
 
 	fmt.Println("Max Procs", runtime.GOMAXPROCS(0))
+
 }
