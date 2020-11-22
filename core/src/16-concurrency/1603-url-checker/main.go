@@ -7,9 +7,10 @@ import (
 	"net/http"
 	"os"
 	"strings"
+	"sync"
 )
 
-func checkAndSaveBody(url string, dirName string) {
+func checkAndSaveBody(url string, dirName string, wg *sync.WaitGroup) {
 	res, err := http.Get(url)
 
 	if err != nil {
@@ -36,6 +37,7 @@ func checkAndSaveBody(url string, dirName string) {
 			}
 		}
 	}
+	wg.Done()
 }
 
 func main() {
@@ -60,8 +62,15 @@ func main() {
 		}
 	}
 
+	// the waitgroup controller
+	var wg sync.WaitGroup
+
+	wg.Add(len(urls)) // add the length of the input to the waitgroups
+
 	for _, url := range urls {
-		checkAndSaveBody(url, dirName)
+		go checkAndSaveBody(url, dirName, &wg)
 		fmt.Println(strings.Repeat("-", 20))
 	}
+
+	wg.Wait() // wait till completion before exiting
 }
