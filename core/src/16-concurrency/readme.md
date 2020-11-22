@@ -24,3 +24,13 @@ A Go routine is a lightweight thread of execution. The building blocks of Go's c
 To coordniate with groutines we can use waitgroups instead of explicit waits which would be a wasteful and cumbersome way to control how our routimes are handled. See here an example of how to declare a waitgroup and how to have the function wait for the waitgroup to be done.
 
 ![](/core/src/16-concurrency/assets/1602-waitgroups.png)
+
+## real world sample that is serial, then concurrent
+
+OK so, real world sample might be a bit a stretch for a one paragraph demo however, we're going to create a sample program that takes a set of urls and performs a check to get the http response from the server and where successful it will write the body to a textfile.
+
+![](/core/src/16-concurrency/assets/1603-url-checker.png)
+
+Above we see the serial version of the program and below we have the same functionality rewritten for concurrent execution.
+
+![](/core/src/16-concurrency/assets/1604-url-checker-v2.png)
