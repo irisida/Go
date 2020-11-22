@@ -20,3 +20,7 @@ A Go routine is a lightweight thread of execution. The building blocks of Go's c
 - goroutines have no identity.
 
 ![](/core/src/16-concurrency/assets/1601-goroutine.png)
+
+To coordniate with groutines we can use waitgroups instead of explicit waits which would be a wasteful and cumbersome way to control how our routimes are handled. See here an example of how to declare a waitgroup and how to have the function wait for the waitgroup to be done.
+
+![](/core/src/16-concurrency/assets/1602-waitgroups.png)
