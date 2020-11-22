@@ -34,3 +34,9 @@ OK so, real world sample might be a bit a stretch for a one paragraph demo howev
 Above we see the serial version of the program and below we have the same functionality rewritten for concurrent execution.
 
 ![](/core/src/16-concurrency/assets/1603-url-checker-v2.png)
+
+## Race conditions and go routines
+
+Data races are possible where we have goroutines on the basis that we need to be more tight with controls to have the same concept as it known as threadsafety for our goroutines. See this example here, we have two goroutines being fired for each iteration of the counter, we cannot predict the outcome. This is a race condition. We know that if we have 100 increments and 100 decrements we should have 0 at the end and yet in muktiple test situations we will have values in both positive and negative ranges because the order of execution is not fixed.
+
+![](/core/src/16-concurrency/assets/1604-race-condition.png)
