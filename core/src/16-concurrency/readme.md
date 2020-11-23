@@ -40,3 +40,9 @@ Above we see the serial version of the program and below we have the same functi
 Data races are possible where we have goroutines on the basis that we need to be more tight with controls to have the same concept as it known as threadsafety for our goroutines. See this example here, we have two goroutines being fired for each iteration of the counter, we cannot predict the outcome. This is a race condition. We know that if we have 100 increments and 100 decrements we should have 0 at the end and yet in muktiple test situations we will have values in both positive and negative ranges because the order of execution is not fixed.
 
 ![](/core/src/16-concurrency/assets/1604-race-condition.png)
+
+## Creating safe concurrency with mutex
+
+mutex - mutual exclusion is a brut force means of achieving safe concurrency in Go.
+
+![](/core/src/16-concurrency/assets/1606-mutex.png)

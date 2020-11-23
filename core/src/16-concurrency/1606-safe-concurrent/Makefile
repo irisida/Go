@@ -2,7 +2,7 @@ run:
 	go run -race main.go
 
 build:
-	go build -o goRaceConditions main.go
+	go build -o goSafeConcurrent main.go
 
 RUN_TARGETS := run-race
 run-race: ARGS=-race
