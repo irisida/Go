@@ -25,4 +25,4 @@ It is common practice in Go to use a function literal (anonymous function) to sp
 
 Next we will update the previous section project, the URL service checker to refactor and use channels and go-routines. It is important to remember if checking the number of goroutines an application has that the main process will count as one too, so if we're checking 3 URls we expect 4 goroutines in total, 5 URls meas 6 goroutines in total and so on.
 
-![](/core/src/17-channels/assets/1704-url_checker.png)
+![](/core/src/17-channels/assets/1704-url-checker.png)
