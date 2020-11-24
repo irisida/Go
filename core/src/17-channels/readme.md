@@ -8,3 +8,9 @@ An initialised channel holds an address and is much like a pointer and can be pa
 Let's see the channel operator. We cannot run this sample as we will have a deadlock because no goroutine was created, but we can see the syntactic introduction that is made with channels
 
 ![](/core/sr/17-channels/assets/17-channel-syntax.png)
+
+## Channels with go-routines
+
+Here we see an example of a single pass/return communication as well as a multi pass/return in a loop.
+
+![](/core/sr/17-channels/assets/1702-channel-routine.png)

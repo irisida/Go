@@ -18,3 +18,4 @@
 - [14 - Methods and Receivers](/core/src/14-methods-and-receivers)
 - [15 - Interfaces](/core/src/15-interfaces)
 - [16 - Concurrency](/core/src/16-concurrency)
+- [17 - Channels](/core/src/17-channels)
