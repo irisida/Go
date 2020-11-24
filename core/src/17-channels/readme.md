@@ -15,7 +15,7 @@ Here we see an example of a single pass/return communication as well as a multi 
 
 ![](/core/src/17-channels/assets/1702-channel-routine.png)
 
-## Channels, go-routines and function literals (anoymous functions)
+## Channels, go-routines and function literals (anonymous functions)
 
 It is common practice in Go to use a function literal (anonymous function) to spawn a new go-routine. Here we see that the function literal is called with the `go` keyword to create the call as a go-routine. The function is then immediately invoked, failure to invoke will result in a compilation error.
 
