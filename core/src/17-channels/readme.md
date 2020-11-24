@@ -20,3 +20,9 @@ Here we see an example of a single pass/return communication as well as a multi 
 It is common practice in Go to use a function literal (anonymous function) to spawn a new go-routine. Here we see that the function literal is called with the `go` keyword to create the call as a go-routine. The function is then immediately invoked, failure to invoke will result in a compilation error.
 
 ![](/core/src/17-channels/assets/1703-function-literal.png)
+
+## Updated webserver response checker app with channels and go-routines
+
+Next we will update the previous section project, the URL service checker to refactor and use channels and go-routines. It is important to remember if checking the number of goroutines an application has that the main process will count as one too, so if we're checking 3 URls we expect 4 goroutines in total, 5 URls meas 6 goroutines in total and so on.
+
+![](/core/src/17-channels/assets/1704-url_checker.png)
