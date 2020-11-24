@@ -2,31 +2,23 @@ package main
 
 import "fmt"
 
+func f1(n int, ch chan int) {
+	ch <- n
+}
+
 func main() {
-
-	var ch chan int
-
-	// an uninitialised channel is nil
-	fmt.Println(ch)
-
-	// initliaise a channel
-	ch = make(chan int)
-	// recheck the output value
-	fmt.Println(ch)
-
-	// declare and initialise
 	c := make(chan int)
 
-	// the chanell operator is:  <-
+	// only recieves
+	c1 := make(<-chan string)
+	// only sending
+	c2 := make(chan<- string)
 
-	// send operation
-	c <- 10
+	fmt.Printf("%T, %T, %T,  \n", c, c1, c2)
 
-	// receive has the receiver, assignment, channel operator and channel
-	num := <-c
+	go f1(10, c)
 
-	fmt.Println(<-c)
-	fmt.Println(num)
+	n := <-c
 
-	close(c)
+	fmt.Println(n)
 }
