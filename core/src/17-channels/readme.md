@@ -31,4 +31,4 @@ Next we will update the previous section project, the URL service checker to ref
 
 Now we'll strip the file-writing out the project as the key here is to demonstrate the ability to cycle continuously across a channel by putting he ouput of a channel back into it. We have 3 posibe syntax options here to iterate over a range of urls continuously using the channels communication.
 
-![](/core/src/17-channels/assets/1705-background_channels.png)
+![](/core/src/17-channels/assets/1705-background-channels.png)
