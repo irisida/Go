@@ -45,3 +45,11 @@ Interms of benefits the unbuffered option has stronger synchronisation. Buffered
 
 #### A buffered example
 ![](/core/src/17-channels/assets/1707-buffered.png)
+
+## The select statement
+
+The select statement lets a go routine wait on multiple communications operations. It blocks until one of its cases can be run and then it executes that cases. In the event the unblocking means that multiple applicable cases can now be run then Go will handle the multiple cases by selecting one at random for the next processing.
+
+This is a powerful feature of `Go` in that it allows us to wait on multiple channel operations. Send a recieve operations on a nil channel block forever ad this can be used to disable a channel in a select statement. the `select` is only used with, only applicable to, channels in Go.
+
+![](/core/src/17-channels/assets/1708-select.png)
