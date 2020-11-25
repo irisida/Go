@@ -32,3 +32,16 @@ Next we will update the previous section project, the URL service checker to ref
 Now we'll strip the file-writing out the project as the key here is to demonstrate the ability to cycle continuously across a channel by putting he ouput of a channel back into it. We have 3 posibe syntax options here to iterate over a range of urls continuously using the channels communication.
 
 ![](/core/src/17-channels/assets/1705-background-channels.png)
+
+## Buffered and unbuffered channels
+
+When channels are declared without a capacity they are unbuffered, or what is often called synhronised/synchronous channels. A buffered channel has a capcity and even a closed channe will hold that capacity. Proceeding with printing the output of the channel for a closed channel will yeild a zero value for thet type of channel it is. If we try to send/pass more data into it we will have a `panic`.
+
+
+Interms of benefits the unbuffered option has stronger synchronisation. Buffered options are more decoupled. If the upper limit of operations is known n advance buffered is a good option because we can send all the values befre the first is even received. Where that is unknown and/or a coupling is required the unbuffered one is a better choice.
+
+#### An unbuffered example
+![](/core/src/17-channels/assets/1706-unbuffered.png)
+
+#### A buffered example
+![](/core/src/17-channels/assets/1707-buffered.png)
